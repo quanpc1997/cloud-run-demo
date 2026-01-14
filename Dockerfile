@@ -15,7 +15,7 @@ COPY server.py .
 COPY .env .
 
 # Expose port
-# EXPOSE 8000
+EXPOSE 8000
 
 # Run the application
 CMD ["python", "server.py"]
