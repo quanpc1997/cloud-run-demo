@@ -14,7 +14,7 @@ fake = Faker()
 
 # Read configuration from environment variables
 HOST = os.getenv("HOST", "0.0.0.0")
-PORT = int(os.getenv("PORT", 8000))
+PORT = int(os.environ["PORT"])
 DEFAULT_LIMIT = int(os.getenv("DEFAULT_LIMIT", 5))
 
 class User(BaseModel):
